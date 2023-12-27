@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [guru99 Demo]">
+  <parameter name="password" value="dagevUj"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://www.demo.guru99.com/V4/"/>
+  <parameter name="username" value="mngr543442"/>
+  <test name="Smoke Testing">
+    <parameter name="password" value="dagevUj"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.demo.guru99.com/V4/"/>
+    <parameter name="username" value="mngr543442"/>
+    <classes>
+      <class name="testngp.TestNgParameters"/>
+    </classes>
+  </test> <!-- Smoke Testing -->
+  <test name="Smoke Testing(failed)">
+    <parameter name="password" value="dagevUj"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.demo.guru99.com/V4/"/>
+    <parameter name="username" value="mngr543442"/>
+    <classes>
+      <class name="testngp.TestNgParameters">
+        <methods>
+          <include name="addCustomer"/>
+          <include name="editCustomer"/>
+          <include name="deleteCustomer"/>
+        </methods>
+      </class> <!-- testngp.TestNgParameters -->
+    </classes>
+  </test> <!-- Smoke Testing(failed) -->
+</suite> <!-- Failed suite [guru99 Demo] -->
