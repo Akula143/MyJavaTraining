@@ -22,6 +22,7 @@ public class ConditionalMethods {
 		 * 1.isDisplayed
 		 * 2.isEnabled
 		 * 3.isSelected
+		 * all will give the boolean values
 		 */
 		driver.findElement(By.xpath("//textarea[@id='textbox']")).sendKeys("Swhizz");
 		boolean generatebtn=driver.findElement(By.xpath("//button[@id='createTxt']")).isEnabled();
